@@ -1,2 +1,2 @@
-# design-patterns
+# Design Patterns
 Contains software design patterns implementation examples
