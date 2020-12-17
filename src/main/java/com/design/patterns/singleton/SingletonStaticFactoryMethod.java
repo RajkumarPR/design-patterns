@@ -1,4 +1,4 @@
-package com.design.patterns;
+package com.design.patterns.singleton;
 
 /**
  * Since Singleton instance is static and final variable it initialized when class is first loaded into memory
