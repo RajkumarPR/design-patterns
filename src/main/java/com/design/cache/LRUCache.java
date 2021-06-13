@@ -1,4 +1,4 @@
-package com.design.patterns;
+package com.design.cache;
 
 import java.util.HashMap;
 

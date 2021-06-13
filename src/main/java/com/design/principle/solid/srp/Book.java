@@ -1,7 +1,6 @@
 package com.design.principle.solid.srp;
 
 /**
- *
  * Single Responsibility Principle (SRP): This principle states that a "class should only have one responsibility.
  * Furthermore, it should only have one reason to change".
  *
@@ -46,16 +45,18 @@ public class Book {
         this.text = text;
     }
 
-    // methods that directly relate to the book properties
-    public String replaceWordInText(String word){
+    /**
+     * methods that directly relate to the book properties
+     */
+    public String replaceWordInText(String word) {
         return text.replaceAll(word, text);
     }
 
-    public boolean isWordInText(String word){
+    public boolean isWordInText(String word) {
         return text.contains(word);
     }
 
-    // now if we add an method to print the book content into console, but in feature the printing may change,
+    // now if we add an method to print the book content into console, but in future the printing may change,
     // below method is violating the Single Responsibility Principle
     // we need take out the printing functionality to an another class
 
