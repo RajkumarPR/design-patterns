@@ -4,7 +4,7 @@ public enum SingletonEnum {
 
     INSTANCE;
 
-    public String testEnumSingelton() {
+    public String testEnumSingleton() {
         return "Hello Enum singleton";
     }
 }

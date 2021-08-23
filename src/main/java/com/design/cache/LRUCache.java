@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class LRUCache {
 
-    class Entry {
+    static class Entry {
         int value;
         int key;
         Entry left;
@@ -13,7 +13,7 @@ public class LRUCache {
 
     private HashMap<Integer, Entry> hashMap;
     private Entry start, end;
-    private int LRU_SIZE = 4;
+    private final int LRU_SIZE = 4;
 
     public LRUCache() {
         hashMap = new HashMap<Integer, Entry>();

@@ -15,6 +15,6 @@ public class SingletonBillPugh {
     }
 
     public String testMethod() {
-        return "Bii Pugh singleton";
+        return "Bill Pugh singleton";
     }
 }

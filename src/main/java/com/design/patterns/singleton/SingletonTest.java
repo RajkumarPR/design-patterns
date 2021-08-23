@@ -81,7 +81,7 @@ public class SingletonTest {
         new Thread(()->{
             for (int i = 0; i < 10; i++) {
                 SingletonEnum singletonEnum = SingletonEnum.INSTANCE;
-                System.out.println(singletonEnum.testEnumSingelton()+" "+i);
+                System.out.println(singletonEnum.testEnumSingleton()+" "+i);
             }
         }).start();
 

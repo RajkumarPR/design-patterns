@@ -1,4 +1,4 @@
-package com.design.patterns.factory;
+package com.design.patterns.factory.shape;
 
 public class Circle implements Shape {
     @Override
