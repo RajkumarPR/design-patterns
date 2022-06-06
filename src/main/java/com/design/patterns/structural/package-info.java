@@ -1,1 +1,0 @@
-package com.design.patterns.structural;

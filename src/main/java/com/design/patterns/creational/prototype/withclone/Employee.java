@@ -5,35 +5,41 @@ import java.util.List;
 
 public class Employee implements Cloneable {
 
-    private List<String> employees;
+    private List<String> empName;
 
     public Employee() {
-        employees = new ArrayList<>();
+        empName = new ArrayList<>();
     }
 
     public Employee(List<String> employees) {
-        this.employees = employees;
+        this.empName = employees;
     }
 
     //Let's say we had method which loads the data from the DB
 
     public void loadDataFromDB() {
-        employees.add("Raj");
-        employees.add("Saanvi");
-        employees.add("Tanu");
-        employees.add("Tanvi");
+        empName.add("Raj");
+        empName.add("Saanvi");
+        empName.add("Tanu");
+        empName.add("Tanvi");
     }
 
-    public List<String> getEmployees() {
-        return employees;
+    public List<String> getEmpName() {
+        return empName;
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
+    // deep copy
+    public Employee clone() {
         List<String> employeeClone = new ArrayList<>();
-        for (String emp : employees) {
+        for (String emp : this.getEmpName()) {
             employeeClone.add(emp);
         }
         return new Employee(employeeClone);
     }
+
+    // shallow copy
+    /*@Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }*/
 }

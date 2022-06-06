@@ -1,4 +1,4 @@
-package com.design.patterns.structural.bridge;
+package com.design.patterns.structural.bridge.car;
 
 public class Bike extends Vehicle {
 
@@ -7,7 +7,7 @@ public class Bike extends Vehicle {
     }
 
     @Override
-    protected void manufacture() {
+    public void manufacture() {
         System.out.println("The bike's part are "+workshop1.work()+" then "+workshop2.work());
     }
 }

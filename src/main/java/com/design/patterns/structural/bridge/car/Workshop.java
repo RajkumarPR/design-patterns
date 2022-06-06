@@ -1,4 +1,4 @@
-package com.design.patterns.structural.bridge;
+package com.design.patterns.structural.bridge.car;
 
 public interface Workshop {
 

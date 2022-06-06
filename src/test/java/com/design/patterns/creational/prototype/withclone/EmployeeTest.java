@@ -18,14 +18,14 @@ public class EmployeeTest {
 
         // now we have loaded employee Object
         // We just need to clone this object and do whatever we want
-        Employee clonedEmployee = (Employee) employee.clone();
-        List<String> clonedEmployeeList = clonedEmployee.getEmployees();
+        Employee clonedEmployee = new Employee(employee);
+        List<String> clonedEmployeeList = clonedEmployee.getEmpName();
         clonedEmployeeList.add("Shyam");
 
-        System.out.println("Actual : "+employee.getEmployees());
+        System.out.println("Actual : "+employee.getEmpName());
         System.out.println("Cloned : "+ clonedEmployeeList);
 
-        assertArrayEquals(clonedEmployee.getEmployees().stream().toArray(String[]::new), clonedEmployeeList.toArray());
+        assertArrayEquals(clonedEmployee.getEmpName().stream().toArray(String[]::new), clonedEmployeeList.toArray());
     }
 
 }

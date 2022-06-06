@@ -7,20 +7,21 @@ import java.util.List;
 abstract class Department {
     protected abstract void departmentName();
 }
+
 // leaf
 class FinanceDepartment extends Department {
 
     private Integer id;
     private String name;
 
-    @Override
-    protected void departmentName() {
-        System.out.println(this.name);
-    }
-
     public FinanceDepartment(Integer id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    @Override
+    protected void departmentName() {
+        System.out.println(this.name);
     }
 
     public Integer getId() {
@@ -33,7 +34,7 @@ class FinanceDepartment extends Department {
 }
 
 // ComputerScience department
-class CSDepartment extends   Department {
+class CSDepartment extends Department {
     private Integer id;
     private String name;
 
@@ -49,7 +50,7 @@ class CSDepartment extends   Department {
 }
 
 // composite
-public class DepartmentsComposite extends Department{
+public class DepartmentsComposite extends Department {
 
     private Integer id;
     private String name;

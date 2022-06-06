@@ -38,6 +38,11 @@ public class BankAccount {
         return email;
     }
 
+    public static BankAccount.Builder builder(Long accountNumber,
+                                              String accountHolderName,
+                                              AccountType accountType) {
+        return new Builder(accountNumber, accountHolderName, accountType);
+    }
     // Inner builder class
     public static class Builder {
         private Long accountNumber;

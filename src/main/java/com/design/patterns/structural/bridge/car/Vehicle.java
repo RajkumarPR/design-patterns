@@ -1,4 +1,4 @@
-package com.design.patterns.structural.bridge;
+package com.design.patterns.structural.bridge.car;
 
 public abstract class Vehicle {
 
@@ -10,5 +10,5 @@ public abstract class Vehicle {
         this.workshop2 = workshop2;
     }
 
-    protected abstract void manufacture();
+    public abstract void manufacture();
 }

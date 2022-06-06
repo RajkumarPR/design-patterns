@@ -7,6 +7,8 @@ public abstract class Tree {
     private double height;
     private Position position;
 
+    // abstract method
+    public abstract Tree copy();
 
     public Tree(double mass, double height) {
         this.mass = mass;
@@ -46,5 +48,4 @@ public abstract class Tree {
                 .toString();
     }
 
-    public abstract Tree copy();
 }

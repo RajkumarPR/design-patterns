@@ -16,7 +16,7 @@ public class LRUCache {
     private final int LRU_SIZE = 4;
 
     public LRUCache() {
-        hashMap = new HashMap<Integer, Entry>();
+        hashMap = new HashMap<>();
     }
 
     public static void main(String[] args) {
